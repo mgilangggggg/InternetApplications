@@ -1,2 +1,2 @@
 # Internet-Applications
-Internet Applications Using HTML, CSS, &amp; JavaScript
+Repo to store learning internet applications using HTML, CSS, &amp; JavaScript
