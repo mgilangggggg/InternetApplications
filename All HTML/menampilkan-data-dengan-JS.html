@@ -1,0 +1,81 @@
+<!-- Menampilkan Form Data Mahasiswa dengan JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Data Mahasiswa</title>
+  </head>
+  <body>
+    <center>
+      <h2>Form Data Mahasiswa</h2>
+      <br />
+      <form name="form" method="post">
+        <script>
+          function proses() {
+            var nama = document.form.namaanda.value;
+            var kelamin = document.form.jk.value;
+            var hoby = document.form.musik.value;
+            var hoby = document.form.jalan.value;
+            var hoby = document.form.baca.value;
+            var agama = document.form.agama.value;
+            var sekolah = document.form.asalsekolah.value;
+            var keterangan = document.form.ket.value;
+
+            alert("Nama Anda :" + nama);
+            alert("Jenis Kelamin :" + kelamin);
+            alert("Hoby :" + hoby);
+            alert("Agama :" + agama);
+            alert("Asal Sekolah :" + sekolah);
+            alert("Keterangan : " + keterangan);
+          }
+        </script>
+        <table>
+          <tr>
+            <td>Nama Anda</td>
+            <td>: <input type="text" name="namaanda" size="20" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>: <input type="radio" name="jk" value="pria" />Pria <input type="radio" name="jk" value="Wanita" />Wanita</td>
+          </tr>
+          <tr>
+            <td>Hoby</td>
+            <td>: <input type="checkbox" name="musik" value="musik" />Musik</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>: <input type="checkbox" name="jalan" value="jalan" />Jalan</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>: <input type="checkbox" name="baca" value="baca" />Baca</td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>
+              :
+              <select name="agama" size="1">
+                <option value="islam">Islam</option>
+                <option value="budha">Budha</option>
+                <option value="hindu">Hindu</option>
+                <option value="kristen">Kristen</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Asal Sekolah</td>
+            <td>: <input type="text" name="asalsekolah" size="35" /></td>
+          </tr>
+          <tr>
+            <td>Keterangan</td>
+            <td>: <textarea name="ket" cols="35" rows="5"></textarea></td>
+          </tr>
+        </table>
+        <hr />
+        <input type="button" value="Proses" onclick="proses()" />
+        <input type="reset">
+      </center>
+      </form>
+  </body>
+</html>

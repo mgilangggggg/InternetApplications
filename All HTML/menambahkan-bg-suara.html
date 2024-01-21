@@ -1,0 +1,17 @@
+<!-- Menambahkan Background suara -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>autoplay</title>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mpeg" />
+      <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg;codecs=vorbis" />
+      <p>Browser tidak mendukung audio</p>
+    </audio>
+    <button type="button" onclick="document.getElementById(bgsound).pause();">Stop background sound</button>
+  </body>
+</html>

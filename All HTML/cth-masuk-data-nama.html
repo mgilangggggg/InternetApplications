@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form" method="post">
+      <script>
+        function proses() {
+          var nama = document.form.namaanda.value;
+          alert("Nama Anda :" + nama);
+        }
+      </script>
+      <h2>Contoh Masuk Data</h2>
+      <hr />
+      <td>Nama Anda</td>
+      <td>
+        <input type="text" name="namaanda" />
+        <input type="button" value="Proses" onclick="proses()" />
+      </td>
+    </form>
+  </body>
+</html>
